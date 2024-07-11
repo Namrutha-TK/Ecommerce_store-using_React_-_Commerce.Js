@@ -1,0 +1,124 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 60px;
+    line-height: 12px;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    /* position: fixed; */
+    width: 100%;
+    z-index: 5;
+}
+.navbar{
+    background-color:#131921 ;
+    color: white;
+    height: 60px;
+    display: flex;
+    height: 60px;
+    flex: 1;
+
+}
+.firstSection{
+   
+    display: flex;
+    height: 60px;
+    text-size-adjust: 100%;
+    width: 281px;
+    
+    
+}
+.locationContainer{
+    box-sizing: border-box;
+    
+    padding: 4px;
+
+}
+
+.logoContainer{
+    display: flex;
+    height: 60px;
+    margin-left: 11px;
+    padding: 4px 0 0 0;
+    width: 80px;
+}
+.logoImg{
+    display: flex;
+    height: 50px;
+    font-size: 14px;
+    margin: 1px 8px 6px 0;
+    width: 129px;
+}
+.searchBar{
+    max-width: 835px;
+    display: flex;
+    flex: 1;
+    height: 60px;
+    padding: 10px 4px 10px 3px;
+    margin :0 10px;
+   
+
+}
+.lastSection{
+    display: flex;
+    height: 60px;
+    margin-top: 2px;
+    padding: 3px 0 0 0;
+    width: 383px;
+    
+}
+.userInfo{
+    padding-top: 10px;
+}
+.del_location{
+    color: #ccc;
+    font-size: 12px;
+    line-height: 14px;
+    height: 14px;
+    font-weight: 400;
+    padding-right: 0;
+    clear: both;
+    display: inline-block;
+    white-space: nowrap;
+}
+.signin_btn{
+    font-size: 12px;
+    line-height: 14px;
+    height: 14px;
+    font-weight: 400;
+}
+.account{
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    left: -2;
+}
+.return{
+    margin-top: 9px;
+    height: 14px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+}
+.order{
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 700;
+}
+.cart{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    right: -10px;
+}

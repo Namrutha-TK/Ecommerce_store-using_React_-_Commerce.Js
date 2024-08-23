@@ -7,18 +7,18 @@ const Footer = () => {
             <div className="sub1">
              <a className="text-white topLink">Back to top</a>
             </div>
-            <div className='container-fluid'>
-            <div className='container'>
+            <div className='container-fluid footer_content m-0'>
+            <div className='container '>
             <div className="sub2">
-                <div className="subLists d-flex align-items-center justify-content-center gap-4">
-                    <div className='colSub  d-inline justify-content-start'>
+                <div className="subLists gap-4">
+                    <div className='colSub  get_know '>
                         <li className='heading'>Get to Know <br/>Us</li>
                         <li><a href="" className='text'>About Us</a></li>
                         <li><a href="" className='text'>Careers</a></li>
                         <li><a href="" className='text'>Press Releases</a></li>
                        <li><a href="" className='text'>Amazon Science</a></li>
                     </div>
-                    <div className='colSub '>
+                    <div className='colSub connect'>
                         <li className='heading'>Connect with <br/>Us</li>
                         <li><a href="" className='text'> Facebook</a></li>
                         <li><a href="" className='text'>Twitter</a></li>

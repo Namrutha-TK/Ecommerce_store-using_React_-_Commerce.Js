@@ -27,17 +27,30 @@
 .sub1:hover {
     background-color: #485769;
 }
+.footer_content{
+    background-color: #232F3E;
+}
+.colSub{
+    background-color: #232F3E; 
+
+}
+.subLists{
+    display: flex;
+     align-items:center ;
+     justify-content :center; 
+}
 .sub2{
    
-    color: white;
+    /* color: white; */
     margin-bottom: 0;
     padding-bottom: 0;
+    
     background-color: #232F3E;
     width: 100%;
-    position: absolute;
+    /* position: absolute;
     align-items: center;
     justify-content: center;
-    display: flex;
+    display: flex; */
     gap:5px
 }
 .subLists{
@@ -45,13 +58,20 @@
     margin-top: 0;
    
 }
-
+.get_know{
+    position: relative;
+    top:-18px;
+}
+.connect{
+    position: relative;
+    top:-25px;
+}
 .heading{
     font-weight: 700;
     color: #FFF;
     white-space: normal;
     font-size: 16px;
-    margin: 6px 0 14px 0;
+    margin: 2px 0 5px 0;
     list-style: none;;
 }
 .colSub li {

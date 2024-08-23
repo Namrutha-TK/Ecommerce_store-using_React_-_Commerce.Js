@@ -6,13 +6,13 @@ function Home() {
         <div id="carouselExample" className="carousel slide">
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <img src={banner2} className="d-block w-100" alt="..."/>
+      <img src={banner2} className="d-block w-100" width="100%" alt="..."/>
     </div>
     <div className="carousel-item">
-      <img src={banner1} className="d-block w-100" alt="..."/>
+      <img src={banner1} className="d-block w-100" width="100%" alt="..."/>
     </div>
     <div className="carousel-item">
-      <img src={banner3} className="d-block w-100" alt="..."/>
+      <img src={banner3} className="d-block w-100" width="100%" alt="..."/>
     </div>
   </div>
   <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">

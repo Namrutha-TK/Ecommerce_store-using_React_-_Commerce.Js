@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import propTypes from 'prop-types';
 import CartContext from "../context/CartContext";
 import { useCartCount } from "../context/CartCountContext";
+import '../../styles/Cart.css';
 
 
  
@@ -36,11 +37,11 @@ const Carts=()=>{
        useEffect(()=>{
         getCart();
        },[])
-       const handleRemoveFromCart = async (line_item_id) => {
+       const handleRemoveFromCart = async (itemId) => {
            const cartId = localStorage.getItem("cartId");
            try {
             const response = await fetch(
-               "https://api.chec.io/v1/carts/"+cartId+"/items/"+{line_item_id},
+               "https://api.chec.io/v1/carts/"+cartId+"/items/"+itemId,
              {
                 method: "DELETE",
                  headers: {
@@ -116,10 +117,10 @@ return(
           <div className="ml-5 col-md-5">
             <p>Shopping Cart</p>
           </div>
-          <div className="price_title col-md-2">
+          <div className="price_title col-md-5">
             <p className=" card-text">price</p>
           </div>
-          <div className="col md-2 border">
+          <div className="col-md-2 md-2 border">
 
             <p className="justify-content-end">Subtotal : ₹{cartData.subtotal && cartData.subtotal.raw} </p>
             <div className="d-grid gap-2 mb-2">
@@ -166,8 +167,9 @@ return(
                            </div>
                 
                            <div className="delete_btn d-inline col-md-1"> 
-                           <p type="button" href="#" className="card-text d-inline " onClick={()=>{handleRemoveFromCart(product.id)}}> <small className="text-primary text-body-primary "> Delete</small></p>
+                           <button type="button" href="#" className="card-text d-inline delete_btn text-primary" onClick={()=>handleRemoveFromCart(product.id)}>  Delete</button>
                            </div>
+                           &nbsp; &nbsp;
                          <div className="col-md-3">
                            <p className="card-text d-inline"> <small className=" text-body-primary text-primary d-inline "> Save for later</small></p>
                           </div>
